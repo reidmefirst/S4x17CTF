@@ -1,0 +1,2 @@
+# min	hour			day/month	month	day/week
+*	8,9,10,11,12,13,14,15,16	*		*	*	/usr/bin/python /home/krwightm/PageMe/pocsagtx_pagememaybe.py -m 115E21503C16361115780B0B76007600 -c 17713

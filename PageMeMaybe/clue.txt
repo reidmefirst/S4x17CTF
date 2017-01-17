@@ -1,0 +1,11 @@
+The Robots are getting smarter, and seem to be using 2FA for some of their
+key systems.
+
+What we know so far:
+- They seem to be using 920.6125Mhz for their 2FA system
+- They are encrypting their pages somehow
+- They left a secure paging web interface running at 10.3.32.46:1185
+
+Can you find their 2FA pin?
+
+Good luck!

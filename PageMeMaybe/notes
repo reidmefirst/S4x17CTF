@@ -1,0 +1,18 @@
+
+To deploy the challenge you'll need:
+- a hackrf
+- a linux system to run the 2FA pin transmission
+
+Install server.js, hackrfreset.sh, and the compiled usbreset.c code onto your Linux server.
+
+Install gr-mixalot onto said server.
+
+Install pocsagtx_pagememaybe.py onto said server.
+
+Test out gr-mixalot.py with a test page. We used Apollo pagers in the CTF, which support a wide range of frequencies including the ISM band.
+
+Once you are happy, make a cron entry to fire pretty frequently.  Look at 'cron' for this.  Make sure that pages are transmitting frequently.
+
+Next up install node and use npm to install formidable.
+
+Start up server.js on your favorite tcp port (default is tcp/1185). Test it to make sure it works. Ensure all the paths to your scripts are correct: in particular make sure you can access usbreset.sh, and that this can access the compiled usbreset code for resetting the hackrf between transmits. Also make sure the lockfile/semaphore is correct (see /home/krwightm/PageMe/lockfile.lck, might want to change the filename)

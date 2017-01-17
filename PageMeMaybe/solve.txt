@@ -1,0 +1,11 @@
+There are a whole bunch of ways to solve this challenge.
+
+The encryption for the pages is XOR and uses the values 'J1' and 'J2' for the judge's pagers (0x4131 for J1, 0x4132 for J2). The engineering pager gets the 2FA pin code, and has pager ID 'E1' (0x4531 / 17713).
+
+RF Route:
+
+Players can capture several pages including the 2FA encrypted message, and can generate their own ciphertext using the web application.  Players should notice that the encryption is XOR pretty easily from RF capture, and should also notice pretty quickly that the encryption uses two bytes as the key.
+
+Web application route:
+
+We left a 'Debug=False' value in a hidden form field in the web application. If you set this value to True, you get some information on exactly what information is sent to the pager, and to which pager ID it is sent.  This will probably give players enough information to solve the encryption system on its own.
