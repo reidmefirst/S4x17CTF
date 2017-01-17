@@ -16,3 +16,4 @@ This challenge was a SDR problem.  Our Killer Robots were in the process of roll
 
 Players can learn a bit about SDR decoding on this challenge, and can break a very simple encryption algorithm.  Players really seemed to enjoy this challenge during the CTF, much to the Judge's chagrin -- the Judge Pager was beeping constantly on Day 1 and Day 2 of the contest.
 
+This challenge couldn't have been done without help from Stephen Hilt, who tossed around ideas for adding encryption. You can find a research paper by him @ Trend Micro detailing the use of legacy pagers in SCADA/ICS/Medical systems.
