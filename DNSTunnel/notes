@@ -8,3 +8,9 @@ The vision for the protocol is that an A record request is made with a chunk of 
 
 One of the chunks failed to reach our DNS server, so our client retransmitted it. This is meant to throw players off a little (and, is the reason that we wrote Python to generate the PCAP, we were lazy and didn't want to make a router drop a DNS packet or something stupid).
 
+So, to reconstruct the file:
+1) extract the host part of each DNS request (ensuring that an ACK was received for the chunk)
+2) append each of the host parts into a big string
+3) base58 decode the string
+4) output this data to a file
+5) open the file and get the answer
