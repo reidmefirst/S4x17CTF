@@ -1,0 +1,3 @@
+One of *our* servers was compromised. Gasp!
+
+What did the thief steal?  Analyze the attached PCAP to help us out!
